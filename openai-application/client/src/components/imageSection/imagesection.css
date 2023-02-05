@@ -1,0 +1,55 @@
+.image-sec{
+    min-height: 100vh;
+    max-height: auto;
+    width: 100vw;
+    display:flex;
+    margin-top:112px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #000000;
+}
+.h1{
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    padding:10px;
+    font-size: 15px;
+    background-color: gray;
+    color: #ffffff;
+    height: 42px;
+    width: 60%;
+}
+.selectInp{
+    display:flex;
+}
+.input-group{
+    margin:20px
+}
+.img {
+
+    position: relative;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.download-btn{
+    padding: 30px;
+    /* margin-top:30px; */
+    /* margin-left: ; */
+    /* position: absolute; */
+}
