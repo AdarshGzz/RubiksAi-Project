@@ -14,6 +14,7 @@ app.use(cors())
 ///openAi chat api
 app.post('/text/',async(req,res)=>{
     const {message} = req.body
+    // console.log(message)
     try{
         const response = await openai.createCompletion({
           model: "text-davinci-003",
@@ -43,9 +44,6 @@ app.post('/image/',async(req,res)=>{
         console.error(err)
     }
 })
-
-
-
 
 
 app.listen(5400,()=>{

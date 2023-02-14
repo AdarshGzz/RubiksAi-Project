@@ -2,23 +2,23 @@ import React, { useState } from "react";
 import "./imagesection.css";
 import "./loadingAnimation.css";
 
-const ImageSection = () => {
+function ImageSection() {
   const [inputValue, setInputValue] = useState("");
   const [size, setSize] = useState("small");
   const [image, setImage] = useState("");
   const [loading, setLoading] = useState(null);
-  const [src,setSrc] = useState("");
+  const [src, setSrc] = useState("");
 
-  const handleClick = async() => {
-    setTimeout(setLoading(true),6000)
+  const handleClick = async () => {
+    setTimeout(setLoading(true), 6000);
   };
 
-   const handleDownload = () => {
-     const link = document.createElement("a");
-     link.download = `${image}`;
-     link.href = src;
-     link.click();
-   };
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.download = `${image}`;
+    link.href = src;
+    link.click();
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,7 +50,7 @@ const ImageSection = () => {
   };
 
   return (
-    <div className="image-sec">
+    <div className="image-sec border border-white border-t-0">
       <p className="h1">Generate Your Imagination</p>
       <form onSubmit={handleSubmit}>
         <input
@@ -103,7 +103,7 @@ const ImageSection = () => {
               <button
                 className="btn btn-outline-light"
                 onClick={handleDownload}
-                type='download'
+                type="download"
                 disabled={!src}
               >
                 Download this image
@@ -114,6 +114,6 @@ const ImageSection = () => {
       )}
     </div>
   );
-};
+}
 
 export default ImageSection;

@@ -1,38 +1,45 @@
-.image-sec{
+.image-sec {
     min-height: 100vh;
     max-height: auto;
     width: 100vw;
-    display:flex;
-    margin-top:112px;
+    display: flex;
+
     position: absolute;
     flex-direction: column;
     background-color: #000000;
 }
-.h1{
+
+.h1 {
     padding: 20px;
+    font-size: 1.5em;
     color: #ffffff;
     text-align: center;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form-control{
-    padding:10px;
+
+.form-control {
+    padding: 10px;
     font-size: 15px;
     background-color: gray;
     color: #ffffff;
     height: 42px;
     width: 60%;
 }
-.selectInp{
-    display:flex;
+
+.selectInp {
+    display: flex;
 }
-.input-group{
-    margin:20px
+
+.input-group {
+    margin: 20px
 }
+
 .img {
 
     position: relative;
@@ -41,13 +48,15 @@ form{
     justify-content: center;
     align-items: center;
 }
-.image-container{
+
+.image-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.download-btn{
+
+.download-btn {
     padding: 30px;
     /* margin-top:30px; */
     /* margin-left: ; */
